@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
     password: 'Sathish@19',
     database: 'ecommerce'
 });
-
+//connect
 connection.connect((err) => {
     if (err) {
         throw err;
@@ -32,6 +32,7 @@ app.get('/', (req, res) => {
     );
 })
 
+//listening to port 3000
 app.listen(3000, (req, res) => {
     console.log('Listening on port 3000');
 })
