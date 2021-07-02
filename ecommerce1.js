@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
             if (err) {
                 throw err;
             }
-            res.render('database', { name: results });
+            res.render('database1', { name: results });
         }
     );
 })
